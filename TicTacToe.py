@@ -1,7 +1,12 @@
-# coding=UTF8
-from tkinter import Tk, Button
-from tkinter.font import Font
+import sys
+if sys.version_info >= (3, 0):
+  from tkinter import Tk, Button
+  from tkinter.font import Font
+else:
+  from Tkinter import Tk, Button
+  from tkFont import Font
 from copy import deepcopy
+
  
 class Board:
  
